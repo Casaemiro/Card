@@ -1,0 +1,202 @@
+#card {
+    /* min-height: 50px;
+    min-width: 50px; */
+    background-color: white;
+    /* opacity: 0.8; */
+    /* color: red; */
+    margin-left: 28%;
+    margin-right: 28%;
+    margin-top: 6%;
+    display: grid;
+    grid-gap: .3em;
+    grid-template-areas:
+    "sec1  sec2 sec3"
+    "sec4 sec4 sec5";
+    grid-template-columns: 
+    34% 14% 52%;
+    padding: 10px;
+    font-family: 'Exo 2', 'regular';
+    border-radius: 7px;
+    border: 05x solid #6E90CA;
+    box-shadow:2px 2px 20px -1px #6E90CA;
+}
+/* #card > div{
+    border: 2px solid black;
+} */
+#card > div:first-child{
+    grid-area: sec1;
+}
+/* #card > div:fourth-child{
+    grid-area: sec4;
+} */
+#pic {
+    grid-area: sec1;
+}
+#verticalLogo {
+    grid-area: sec2;
+}
+#links {
+    grid-area: sec3;
+    line-height: 20px;
+}
+#horizontalLogo {
+    grid-area: sec4;
+}
+#horizontalLogoinfo {
+    grid-area: sec5;
+    padding: 3%;
+    font-size: 1.5em;
+    color: #6E90CA;
+    border-left: 1px solid #6E90CA
+    ;
+}
+#pic img{
+    max-height:200px;
+    max-width: 200px;
+  }
+  #verticalLogo img{
+    max-height:190px;
+    max-width: 170px;
+    /* padding-left: 10px; */
+  }
+  #clickable {
+      color: black;
+      max-width: 100%;
+      max-height:100%;
+      /* background-color: green; */
+      overflow-wrap: break-word;
+      list-style-type: none;
+      padding-left: 10px;
+      padding-right: 10px;
+      /* margin-left: 5%;
+      margin-right: 5%; */
+      font-size: 1.1em;
+
+  }
+  li{
+    list-style-type: none;
+  }
+  #social img{
+      max-width: 40px;
+      max-height: 40px;
+  }
+  .name{
+      font-weight: 600;
+      color: #6E90CA
+      ;
+
+  }
+  #position {
+      margin-bottom: 2%;
+
+  }
+  #clickable li{
+      margin-bottom: 0.4em;
+  }
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    background-color: beige;
+}
+@media (prefers-color-scheme: light) {
+    body {
+      background: #FFF;
+      color: #333;
+    }
+
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+      background: #333;
+      color: #FFF;
+      align-items: center;
+    }
+    #card {
+        background-color: #333;
+        color: white;
+    }
+    #clickable {
+        color: white;
+    }
+    a {
+        color: white;
+    }
+  }
+  /* #changeTheme {
+      background-color: white;
+      border: 1px solid #6E90CA;
+      margin: 2% 45%;
+      padding: 10px;
+      width: 10%;
+      border-radius: 5px;
+  } */
+
+  /* switch */
+   .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin:2%  48%;
+    
+    
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(76, 76, 76);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 1px solid #6E90CA;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #6E90CA;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #333;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }  
